@@ -14,12 +14,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- JS -->
+  <script src="./main.js" defer></script>
 
 </head>
 <body>
-
-  <h1 class="app-name">Spli<br>tter</h1>
+  <img src="./images/logo.svg" alt="logo" class="app-name">
 
   <div id="mainCard">
     <div class="section">
@@ -41,31 +43,33 @@
       </div>
 
       <div class="people">
-        <label for="numPeople">Number of People</label>
+        <label for="numPeople" class="people-label">Number of People</label>
         <input type="number" class="main-fields" id="numPeople" placeholder="0" dir="rtl">
       </div>
     </div>
 
     <div class="section">
-      <div class="tip-amount">
-        <div class="tip-info">
-          <h4>Tip Amount<br>
-            <span>/ person</span></h4>
+      <div class="info">
+        <div class="tip-amount">
+          <div class="tip-info">
+            <h4>Tip Amount<br>
+              <span>/ person</span></h4>
+          </div>
+  
+          <div class="tip-value">
+            <h1 id="tipAmount" class="big-values"></h1>
+          </div>
         </div>
-
-        <div class="tip-value">
-          <h1 id="tipAmount" class="big-values">$4.27</h1>
-        </div>
-      </div>
-
-      <div class="tip-amount">
-        <div class="tip-info">
-          <h4>Total<br>
-            <span>/ person</span></h4>
-        </div>
-
-        <div class="tip-value">
-          <h1 id="totalPerPerson" class="big-values">$32.79</h1>
+  
+        <div class="tip-amount">
+          <div class="tip-info">
+            <h4>Total<br>
+              <span>/ person</span></h4>
+          </div>
+  
+          <div class="tip-value">
+            <h1 id="totalPerPerson" class="big-values"></h1>
+          </div>
         </div>
       </div>
       <button id="reset">Reset</button>

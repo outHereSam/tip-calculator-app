@@ -10,13 +10,14 @@ body, label, input, button {
 
 body {
     background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
 }
 
 input {
     border: solid 3px transparent;
     transition: border 0.2s ease-in;
     background-color: hsl(189, 41%, 97%);
-    appearance: none;
     cursor: pointer;
 }
 
@@ -57,12 +58,7 @@ input.main-fields::placeholder {
 }
 
 .app-name {
-    text-align: center;
-    text-transform: uppercase;
-    color: hsl(183, 100%, 15%);
-    font-size: 24px;
-    letter-spacing: 8px;
-    margin: 50px 0 40px 0;
+    margin: 50px auto 40px auto;
 }
 
 #mainCard {
@@ -89,9 +85,8 @@ input.main-fields::placeholder {
 
 
 .percentages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -99,7 +94,7 @@ input.main-fields::placeholder {
     font-size: 24px;
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
-    width: 120px;
+    width: 148px;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -123,7 +118,7 @@ input.main-fields::placeholder {
 }
 
 .selected-percentage {
-    background-color: hsl(184, 14%, 56%);
+    background-color: hsl(173, 61%, 77%);
     color: hsl(183, 100%, 15%);
 }
 
@@ -131,15 +126,11 @@ input.main-fields::placeholder {
     margin: 0 0 30px 0;
 }
 
-.section {
-    width: 50%;
-}
-
 .section:last-of-type {
     display: flex;
     flex-direction: column;
     background-color: hsl(183, 100%, 15%);
-    padding: 50px;
+    padding: 20px;
     border-radius: 12px;
 }
 
@@ -151,17 +142,17 @@ input.main-fields::placeholder {
 }
 
 .tip-info {
-    font-size: 16px;
+    font-size: 14px;
     color: hsl(0, 0%, 100%);
 }
 
 .tip-info span {
-    font-size: 14px;
+    font-size: 12px;
     color: hsl(185, 41%, 84%);
 }
 
 .big-values {
-    font-size: 42px;
+    font-size: 32px;
     color: hsl(172, 67%, 45%);
 }
 
@@ -180,8 +171,23 @@ button:hover {
     background-color: hsl(173, 61%, 77%);
 }
 
+.error {
+    border-color: hsl(0, 100%, 70%);
+}
+
+.error:focus {
+    border-color: hsl(0, 100%, 70%);
+}
+
+.error-label::before{
+    content: "Can't be zero";
+    font-size: 16px;
+    color: hsl(0, 100%, 70%);
+    float: right;
+}
+
 /* Tables and above */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     body {
         height: 100vh;
         display: flex;
@@ -204,11 +210,15 @@ button:hover {
 
     .section:last-of-type {
         justify-content: space-between;
+        width: 412px;
+        padding: 30px;
     }
-}
 
-@media only screen and (max-width: 900px) {
-    .tip-amount {
-        flex-direction: column;
+    .big-values {
+        font-size: 42px;
+    }
+
+    .percentages {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
