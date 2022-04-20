@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, label, input, button {
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+input {
+    border: solid 3px transparent;
+    transition: border 0.2s ease-in;
+    background-color: hsl(189, 41%, 97%);
+}
+
+label {
+    display: block;
+    color: hsl(186, 14%, 43%);
+    margin: 0 0 10px 0;
+}
+
+input:focus, input.main-fields:focus {
+    outline: none;
+    border-color: hsl(172, 67%, 45%);
+}
+
+input.main-fields {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: hsl(183, 100%, 15%);
+    margin: 0 0 30px 0;
+}
+
+input.main-fields::placeholder {
+    color:  hsl(184, 14%, 56%);
+}
+
+.app-name {
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    letter-spacing: 8px;
+    margin: 50px 0 40px 0;
+}
+
+#mainCard {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 18px rgba(183, 100, 29, 12%);
+}
+
+.section .bill-section input {
+    background-image: url('./images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+}
+
+.people input {
+    background-image: url('./images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+}
+
+.percentages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.tip-percentage {
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    width: 140px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-out;
+    cursor: pointer;
+}
+
+.tip-percentage:hover {
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(183, 100%, 15%);
+}
+
+.percentages input {
+    width: 148px;
+    height: 48px;
+    border-radius: 6px;
+    font-size: 24px;
+    text-indent: 10px;
+}
+
+.selected-percentage {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-percentage-section {
+    margin: 0 0 30px 0;
+}
+
+.section:last-of-type {
+    background-color: hsl(183, 100%, 15%);
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.section:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.tip-info {
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+
+.tip-info span {
+    font-size: 14px;
+    color: hsl(185, 41%, 84%);
+}
+
+.big-values {
+    font-size: 32px;
+    color: hsl(172, 67%, 45%);
+}
+
+button {
+    border: none;
+    padding: 15px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in;
+}
+
+button:hover {
+    background-color: hsl(173, 61%, 77%);
+}
