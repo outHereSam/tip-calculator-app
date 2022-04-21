@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/outHereSam/tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github pages](https://outheresam.github.io/tip-calculator-app/)
 
 ## My process
 
@@ -49,6 +49,6 @@ I learnt a lot working on this project and the main thing that stuck with me was
 ## Author
 
 - Website - [Samuel Larbi Danquah](https://github.com/outHereSam)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@builtbysam](https://www.twitter.com/builtbysam)
 
 
